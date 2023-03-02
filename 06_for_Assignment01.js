@@ -17,7 +17,7 @@ for (let index = 1; index <= 30; index=index+2) {
 }
 
 console.log(`WAP to find first 10 even numbers`);
-for (let index = 0; index >= 20; index=index+2) {
+for (let index = 0; index <= 20; index=index+2) {
     console.log(index);
     
 }
