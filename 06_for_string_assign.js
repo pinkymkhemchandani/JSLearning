@@ -10,7 +10,9 @@ console.log("*******1******");
         
   }
 
-  console.log(`vowewls in str is :${count}`);
+  console.log(`vowewls in str "JavaScript is the language Of internet" is :${count}`);
+  console.log(`vowewls in str "I am Angular Developer" is :${count}`);
+  console.log(`vowewls in str"Hard work and commitment is the key of success"is :${count}`);
 }
   vowels_count("JavaScript is the language Of internet");
   vowels_count("I am Angular Developer");
