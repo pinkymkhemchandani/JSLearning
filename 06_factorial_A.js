@@ -10,10 +10,10 @@ function factorialOfNum(num) {
 
     }
         
-            
+    console.log(`Factorial of ${num} is ${factorial}`);     
     }
 
-    console.log(`Factorial of ${num} is ${factorial}`);
+   
 
 }
 

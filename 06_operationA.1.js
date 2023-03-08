@@ -12,7 +12,7 @@ greaterNumber(800,899);
 console.log("*****2*******");
 
 function isEvenOrOddNum(value){
-    var Result = value%2 ? "False" : "True";
+    var Result = value%2==0 ? "False" : "True";
     console.log(`Result of value is Even: ${Result}`);
 }
 
