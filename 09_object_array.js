@@ -41,6 +41,25 @@ for (const element of arrayOfBanks) {
     console.log(`${element.bankName}, ${element.location}, ${element.account}, ${element.interestRate}`);
 }
 
+
+class Person{
+    constructor(fullName ,city){
+        this.fullName = fullName;
+        this.city =city
+
+    }
+}
+
+
+
+
+const personDhoni = new Person("MS Dhoni", "Ranchi");
+const personShubham = new Person("Shubham Gill", "Mumbai");
+
+console.log(personDhoni instanceof Person);
+console.log(personShubham instanceof Bank);
+console.log(sbiBank instanceof Bank);
+
 //const array = [1, 2, 3, 4, 8, 9];
 // for (const value of array) {
 //    console.log(value); 

@@ -56,3 +56,7 @@ sbiBank.show();
 axisBank.show();
 hdfcBank.show();
 yesBank.show();
+
+// showDetails(){
+//     console.log(`Bank Details: ${this.bankName} ${this.location} ${this.account} ${this.ifsc} ${this.interestRate} `);
+// }
