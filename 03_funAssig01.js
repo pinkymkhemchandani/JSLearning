@@ -27,8 +27,8 @@ value1=value2;
 value2=temp;
 console.log("after swap:",value1,value2);
 }
-var swapVariables = swapValueDude("virat","Anushka")
-var swapVariables = swapValueDude(1000,2000);
+swapValueDude("virat","Anushka");
+swapValueDude(1000,2000);
 
 console.log("******4*****");
 function addThreeValues(num1,num2,num3){

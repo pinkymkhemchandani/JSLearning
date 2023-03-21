@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   
+    <title>Web Local Storage</title>
+ </head>
+ <body>
+    <h2>Web Local Storage</h2>
+    <script>
+        var aaa = "Global variable";
+        window.localStorage.setItem("name", "Pinky Khemchandani");
+        window.localStorage.setItem("city", "Veraval");
+        window.localStorage.setItem("pinCode", "362265");
+        window.localStorage.setItem("district", "Gir Somnath");
+        const city = window.localStorage.removeItem("city");
+        console.log(city);
+    </script>
+ </body>
+ </html>

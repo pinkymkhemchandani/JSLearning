@@ -16,6 +16,11 @@ var stringHandsOn = "    Hey you are doing good , keep it up    ";
 var removeSpace = stringHandsOn.trim();
 console.log("Remove Space of String:",removeSpace , stringHandsOn.length , removeSpace.length);
 
+console.log("***4***");
+
+var extraSpace =  stringHandsOn.length - removeSpace.length
+console.log(extraSpace);
+
 console.log("****5****");
 
 var charcAtindex0 = removeSpace.charAt(0);

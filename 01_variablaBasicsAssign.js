@@ -21,5 +21,7 @@ var isLazy = true
 console.log("type of variable is:", typeof isLazy);
 var isExcited = true
 console.log("type of variable is:", typeof isExcited);
+// console.log(typeof myName,typeof pincode,typeof isMarried);
+
 
 
