@@ -21,10 +21,11 @@ const negativeNumbers =[];
 
 arrayNumbers.forEach(num => {
     if (num<0) {
-        console.log(`Negative Numbers : ${num}`);
-        
+        negativeNumbers.push(num) ;       
     }
+
 });
+console.log(arrayNumbers);
 
 console.log("******4******");
 

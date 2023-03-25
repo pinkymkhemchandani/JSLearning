@@ -21,10 +21,47 @@ var arrayEmployees =[emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny
 
 console.log("******1******");
 for (const working of arrayEmployees ) {
-    let EmpCompany= arrayEmployees.emp_company;
+    let EmpCompany= working.emp_company;
     if (EmpCompany=="TCS") {
-        console.log(`Working Employyes in Company ${this.emp_name} and ${this.emp_company}`)
+        console.log(`Working Employyes in Company ${working.emp_name} who work in  ${working.emp_company}`)
     }
     
 }
 
+console.log("******2******");
+for (const working of arrayEmployees) {
+    let departmentEmp = working.emp_dept;
+    if (departmentEmp == `Finance`) {
+        console.log(`Employee :${working.emp_name} in ${working.emp_dept} department `);
+        
+    }
+    
+}
+
+console.log("******3******");
+for (const working of arrayEmployees) {
+    // let NameStarts = arrayEmployees.emp_name;
+    if (working.emp_name.startsWith("R")) {
+        console.log(`Name starts with R : ${working}`);
+       
+}}
+
+
+console.log("******4******");
+for (const working of arrayEmployees) {
+    let salaryEmp = working.emp_salary;
+    if (salaryEmp>75000) {
+        console.log(`SAlary grater than 75k :${working.emp_name} and company is:${working.emp_company} and salary is:${working.emp_salary}`);
+    }
+    
+}
+
+console.log("******5******");
+for (const working of arrayEmployees) {
+    let salaryEmp = working.emp_salary;
+    let departmentEmp = working.emp_dept
+    if (salaryEmp>=50000 && departmentEmp == "IT" ) {
+        console.log(`Salary greater than equal to 50k and from IT department : ${JSON.stringify(working)}}`);
+    }
+    
+}
