@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise time!</title>
+</head>
+<body>
+    <main>
+        <div id = "Overview">
+            <h1 id = "title">
+                HTML & JavaSceipt are crucial technologies
+            </h1>
+            <p>The web would not work without them...</p>
+        </div>
+        <div id = "advantages">
+            <ul>
+            <li class ="Liitems">Flexible</li>
+            <li class ="Liitems">Available</li>
+            <li class ="Liitems">Magical</li>
+        
+        </ul>
+        </div>
+    </main>
+    <script>
+        console.log("======Main heading store in h1=======");
+        const elementTitle = document.querySelector("#title");
+        console.log(elementTitle.innerHTML);
+
+        console.log("======Second Advantage store the second=======");
+        const elementLiitems = document.getElementsByClassName("Liitems");
+        console.log(elementLiitems[1].innerHTML);
+
+        console.log("======divAdv=======");
+        const elementOfDiv = document.getElementById("advantages");
+        console.log(elementOfDiv.innerHTML);
+
+     </script>
+</body>
+</html>

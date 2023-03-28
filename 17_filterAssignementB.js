@@ -37,9 +37,12 @@ const employee = arrayEmployees.filter ((value) => value.emp_company == "WIPRO")
 
 console.log("*******3*******");
 
-let sums = 0
-const employees = arrayEmployees.filter ((value) => value.emp_company == "WIPRO" && "Infy").map((value)=>sums = sums +value.emp_salary)
-const InfyEmployees =arrayEmployees.filter ((value) => value.emp_company ==  "Infy").map((value)=>sum = sum+value.emp_salary)
-    console.log((employees )+ (InfyEmployees));
-    const employe = arrayEmployees.filter ((value) => value.emp_company == "WIPRO" && "Infy").map((value)=>value.emp_company);
-    console.log(employe);
+console.log("Find the avg salary of employees working in wipro and tcs");
+const twoComArray = arrayEmployees.filter(element=> element.emp_company=="Wipro" || element.emp_company == "Infy")
+
+// console.log(twoComArray[0]);
+const Result = twoComArray.reduce((a,b)=>{
+  return a +b.emp_salary;
+},0)/twoComArray.length;
+
+console.log(Result);

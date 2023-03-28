@@ -1,4 +1,4 @@
-console.log("*****1*****");
+śconsole.log("*****1*****");
 console.log("**Function with no argument and no return value***");
 function stringHandsOn(){
    console.log("Hey you are doing good , keep it up")
@@ -14,9 +14,9 @@ console.log("Lenghth of string:",sumOfChar);
 console.log("***3***");
 var stringHandsOn = "    Hey you are doing good , keep it up    ";
 var removeSpace = stringHandsOn.trim();
-console.log("Remove Space of String:",removeSpace , stringHandsOn.length , removeSpace.length);
-
-console.log("***4***");
+console.log("Remove Space of String:",removśeSpaceś, stringHandsOn.length , removeSpace.length);
+ś
+console.log("***4***");ś
 
 var extraSpace =  stringHandsOn.length - removeSpace.length
 console.log(extraSpace);

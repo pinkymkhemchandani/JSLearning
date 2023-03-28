@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="profile"> My Profile Details </h2>
+    <h3> Technology Stack </h3>
+    <ul id = "stack">
+        <li> HTML and CSS </li>
+        <li class="liItem"> Agile and JIRA </li>
+        <li> Angular or React </li>
+        <li> Database</li>
+    </ul>
+    <h2> Hobbies  </h2>
+    <a href="https://www.google.com/" target="_blank" id="myProfile"> My Profile </a>
+</body>
+
+    <script>
+        console.log("====change color======");
+        const elementProfile = document.querySelector("#profile")
+        elementProfile.style.color = "red";
+
+        console.log("======Remove child=====");
+        const elementProfiles = document.querySelector("#stack");
+        const elementliitems = document.querySelector(".liItem")
+        elementProfiles.removeChild(elementliitems);
+
+    </script>
+
+    
+    
+</html>

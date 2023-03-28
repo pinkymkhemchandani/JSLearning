@@ -22,21 +22,27 @@ var arrayEmployees =[emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny
 console.log(`********1. Assending order of employee id**********`);
 const assendingIds = arrayEmployees.sort((emp1,emp2)=>{
     return emp1.emp_id>emp2.emp_id ? 1 :-1;
-}).map ((emp1,emp2)=> `Id : ${emp1.emp_id}, Name : ${emp1.emp_name} , Department : ${emp1.emp_dept}` )
+}).map ((emp1)=> console.log(`Id : ${emp1.emp_id}, Name : ${emp1.emp_name} , Department : ${emp1.emp_dept}`) )
 
-console.table(assendingIds)
+// console.log(assendingIds)
 
 console.log(`********2. Assending order of Department********`);
 const assendingDepartment = arrayEmployees.sort((dep1,dep2)=>{
     return dep1.emp_dept>dep2.emp_dept? 1 :-1;
-}).map ((dep1,emp2)=> `Id : ${dep1.emp_id}, Department: ${dep1.emp_dept} , Company : ${dep1.emp_company}` )
+}).map ((dep1)=> console.log(`Id : ${dep1.emp_id}, Department: ${dep1.emp_dept} , Company : ${dep1.emp_company}`))
 
-console.table(assendingDepartment);
+// console.log(assendingDepartment);
 
-
-console.log(`********3. Assending order of salary********`);
+console.log(`********3. decsending order of salary********`);
 const assendingSalary = arrayEmployees.sort((sal1,sal2)=>{
-    return sal1.emp_dept>sal2.emp_dept? -1 :11;
-}).map ((sal1,sal2)=> `Name : ${sal1.emp_name}, SAlary : ${sal1.emp_salary} , Comapny : ${sal1.emp_company}` )
+    return sal1.emp_dept>sal2.emp_dept? -1 :1;
+}).map ((sal1)=> console.log(`Name : ${sal1.emp_name}, SAlary : ${sal1.emp_salary} , Comapny : ${sal1.emp_company}`) )
 
-console.table(assendingSalary);
+// console.log(assendingSalary);
+
+// differnt method for sorting
+console.log('1.after sorting in asc order log on console emp details- id , Name and Department');
+  const Emp = arrayEmployees.sort((a,b)=>a.emp_id - b.emp_id).map(a=>{
+
+   console.log(`Id: ${a.emp_id}, name: ${a.emp_name}, Department: ${a.emp_dept}`)});
+  
